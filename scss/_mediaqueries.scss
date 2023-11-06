@@ -1,0 +1,52 @@
+@import 'mixin';
+
+@media (max-width: 770px) {
+  .galeriaH2 {
+    font-weight: normal;
+    font-size: 1.5rem;
+  }
+
+  .galeriaRankingsButton {
+    white-space: nowrap;
+  }
+
+  .inicioSesionIzq,
+  .inicioSesionDer {
+    margin-top: 20px;
+  }
+
+  .inicioSesionInput {
+    width: 50vw;
+  }
+
+  .mangaSectionBotones {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buttonMedia {
+    width: 70%;
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .headerImagen {
+    width: 124px;
+  }
+
+  .galeriaRankingsButton {
+    white-space: normal;
+  }
+
+  .inicioSesionButton {
+    white-space: normal;
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  .buttonHover {
+    @include buttonHover;
+    margin: 5px;
+  }
+}

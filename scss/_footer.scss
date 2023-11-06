@@ -1,0 +1,23 @@
+footer {
+    background-color: $color-oscuro2;
+    padding: 10px;
+    border-top: solid 5px black;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+        color: $color-primario;
+        display: inline;
+        margin-top: 0;
+        margin-bottom: 0;
+        cursor: default;
+    }
+}
+
+.enlace {
+    padding: 5px;
+    text-decoration: none;
+    color: $color-primario;
+}

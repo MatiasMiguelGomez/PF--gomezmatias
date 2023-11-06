@@ -1,0 +1,44 @@
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 16px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: $color-primario;
+  border-radius: 50px;
+}
+
+.background {
+  background-color: $color-oscuro;
+}
+
+.buttonHover {
+  @include buttonHover
+}
+
+.galeriaMangaCartaButton {
+  @include galeriaMangaCartaButton
+}
+
+h1 {
+  color: $color-primario;
+  font-weight: bold;
+  display: inline;
+}
+
+h2 {
+  color: $color-primario;
+  font-weight: bold;
+  display: inline;
+}
+
+h3 {
+  font-size: 2rem;
+  color: $color-primario;
+  text-shadow: 0 0 5px $color-terciario, 0 0 10px $color-terciario;
+  font-weight: bold;
+  transition: 0.3s ease;
+}

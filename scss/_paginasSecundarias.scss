@@ -1,0 +1,230 @@
+/*INICIO SESION*/
+
+.bodyPosition {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.containerPosition {
+    flex: 1;
+    background-color: $color-oscuro2;
+    border-radius: 5px;
+    border: 2px solid $color-medio;
+    padding-bottom: 10px;
+}
+
+.inicioSesionIzq,
+.inicioSesionDer {
+    padding: 40px;
+    background-color: $color-oscuro3;
+    border-radius: 5px;
+    border: 2px solid $color-primario;
+    margin-top: 40px;
+}
+
+.inicioSesionP {
+    color: $color-primario;
+}
+
+.inicioSesionInput {
+    width: 30vw;
+    background-color: $color-medio;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+input.inicioSesionInput::placeholder {
+    color: $letras;
+}
+
+/*PAGINA MANGAS*/
+
+.mangaSectionBotones {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.mangasContenedor {
+    a {
+        img {
+            border-radius: 5px;
+            width: 100%;
+            height: auto;
+            box-shadow: 0 0 5px black;
+        }
+
+        text-decoration: none;
+        border-radius: 5px;
+
+        &:hover {
+            box-shadow: 0 0 5px black;
+            border: 3px solid $color-claro2;
+        }
+    }
+
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+/*VISOR MANGA*/
+
+.descripcionManga {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-oscuro2;
+    border-radius: 5px;
+    border: 2px solid $color-medio;
+    width: 100%;
+}
+
+.descipcionMargenes {
+    margin: 0;
+}
+
+.contenedorImagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: auto;
+}
+
+.paginaManga {
+    width: 100%;
+    height: auto;
+}
+
+.centrarContenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.visorGrupo {
+    background-color: $color-oscuro2;
+    border-radius: 5px;
+    border: 2px solid $color-medio;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*RANKGINGS*/
+
+.rankingsSection {
+    display: flex;
+}
+
+.buttonComentarios {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rankingsImagen {
+    width: 150px;
+    height: 150px;
+}
+
+.rankingsRepertorio {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rankingsDescripcion {
+    margin-right: 20px;
+    width: 600px;
+    height: 150px;
+    overflow: scroll;
+    padding-left: 10px;
+
+    p {
+        color: white;
+        text-shadow: 0 0 5px black, 0 0 10px #005df4;
+    }
+}
+
+.rankingsButton {
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 0 5px black;
+    background-color: $color-primario;
+    color: white;
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+}
+
+.rankingsValoracion {
+    border: 1px solid red;
+}
+
+.coloresTexto {
+    color: $color-primario;
+    font-weight: bold;
+}
+
+.coloresTextoSecundario {
+    color: $color-primario;
+    font-weight: 200;
+}
+
+.cartaColor {
+    background-color: $color-oscuro3;
+    border-radius: 5px;
+    border: 2px solid $color-medio;
+    text-decoration: none;
+}
+
+/*REPRODUCTOR*/
+
+.reproductorContainer {
+    height: 0;
+    padding-bottom: 56.25%;
+    /* Relación de aspecto 16:9 (9 / 16 * 100) */
+    position: relative;
+}
+
+.videoWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.dimensionesVideo {
+    width: 100%;
+    height: 100%;
+}
+
+.containerReproductor {
+    background-color: $color-oscuro2;
+    border-radius: 5px;
+    border: 2px solid $color-medio;
+}
+
+.visorGrupoReproductor {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid $color-primario;
+}
+
+.comentarios {
+    width: 70%;
+}
+
+.comentariosSpan{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.h2Comentarios{
+    display: block;
+}

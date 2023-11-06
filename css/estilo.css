@@ -1,0 +1,563 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 16px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #F27127;
+  border-radius: 50px;
+}
+
+.background {
+  background-color: #0f1014;
+}
+
+.buttonHover {
+  color: #d7bf9a;
+  text-shadow: 0 0 1px black;
+  background-color: #68738f;
+  margin: 10px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+.buttonHover:hover {
+  color: #444b60;
+  background-color: #b1b8c8;
+}
+
+.galeriaMangaCartaButton {
+  background-color: #F27127;
+  border-radius: 50%;
+  border: none;
+  margin-right: 10px;
+  margin-left: 20px;
+  padding: 5px;
+}
+
+h1 {
+  color: #F27127;
+  font-weight: bold;
+  display: inline;
+}
+
+h2 {
+  color: #F27127;
+  font-weight: bold;
+  display: inline;
+}
+
+h3 {
+  font-size: 2rem;
+  color: #F27127;
+  text-shadow: 0 0 5px #735A4C, 0 0 10px #735A4C;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+header {
+  background-color: #343846;
+  border-bottom: 5px solid #0f1014;
+}
+
+.colorToggle {
+  background-color: #F27127;
+}
+
+.alturaBusqueda {
+  height: 40px;
+  width: 180px;
+}
+
+footer {
+  background-color: #343846;
+  padding: 10px;
+  border-top: solid 5px black;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer p {
+  color: #F27127;
+  display: inline;
+  margin-top: 0;
+  margin-bottom: 0;
+  cursor: default;
+}
+
+.enlace {
+  padding: 5px;
+  text-decoration: none;
+  color: #F27127;
+}
+
+.galeriaManga,
+.galeriaAnime {
+  height: auto;
+}
+
+.galeriaManga,
+.galeriaAnime {
+  background-color: #343846;
+  border-radius: 5px;
+  border: 2px solid #68738f;
+}
+
+.galeriaLink {
+  color: #F27127;
+  font-weight: bold;
+  background-color: #68738f;
+  border-radius: 5px;
+  margin: 0px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.carouselMargin {
+  margin-top: 50px;
+}
+
+.galeriaRankings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.galeriaRankingsButton {
+  background-color: #68738f;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px black;
+  margin-left: 10px;
+  text-decoration: none;
+  color: #d7bf9a;
+  padding: 5px;
+  text-shadow: 0 0 1px black;
+  transition: 0.3s ease;
+}
+.galeriaRankingsButton:hover {
+  color: #444b60;
+  background-color: #b1b8c8;
+  cursor: pointer;
+}
+
+.galeriaCarrusel {
+  margin: 25px 0 25px 0;
+}
+
+.galeriaMangaModoNoche {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.galeriaMangaButton {
+  background-color: #F27127;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px black;
+  margin-left: 10px;
+  transition: 0.3s ease;
+}
+.galeriaMangaButton:hover {
+  background-color: #B37049;
+  box-shadow: 0 0 10px black;
+}
+
+.galeriaMangaP {
+  color: #F27127;
+  align-items: center;
+  font-weight: bold;
+  margin: 0 0 0 auto;
+  font-size: 1.2rem;
+}
+
+.galeriaMangaContainer {
+  overflow: scroll;
+  height: 500px;
+}
+
+.galeriaMangaContainer::-webkit-scrollbar {
+  width: 16px;
+}
+
+.galeriaMangaContainer::-webkit-scrollbar-thumb {
+  background: #F27127;
+  border-radius: 50px;
+}
+
+.galeriaMangaCarta {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  box-shadow: 0 0 5px black;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+.galeriaMangaCarta:hover {
+  box-shadow: 0 0 10px black;
+}
+.galeriaMangaCarta:hover > h3 {
+  color: white;
+}
+.galeriaMangaCarta:hover > .galeriaMangaCartaButton {
+  background-color: white;
+}
+
+.galeriaMangaCartaImagen {
+  height: 140px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.galeriaImagen {
+  width: 100%;
+}
+
+.galeriaMangaCartaButtonImg {
+  width: 40px;
+}
+
+.galeriaMangaCartaButton {
+  transition: 0.3s ease;
+}
+
+.cartaTopAnime {
+  padding: 15px;
+  display: flex;
+  position: relative;
+}
+.cartaTopAnime a img {
+  max-width: 100%;
+  height: auto;
+}
+.cartaTopAnime .numero {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #343846;
+  color: #F27127;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+.cartaTopAnime .titulo {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: #343846;
+  color: #F27127;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+@media (max-width: 990px) {
+  .cartaTopAnime .numero {
+    padding: 50px;
+  }
+  .cartaTopAnime .titulo {
+    padding: 5px;
+  }
+}
+.cartaTopAnime:hover .titulo {
+  color: white;
+}
+.cartaTopAnime:hover a img {
+  filter: blur(1px);
+}
+.cartaTopAnime:hover .numero {
+  color: white;
+}
+
+.topAnimesCenter {
+  background-color: #343846;
+  border-radius: 5px;
+  border: 2px solid #68738f;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+/*INICIO SESION*/
+.bodyPosition {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.containerPosition {
+  flex: 1;
+  background-color: #343846;
+  border-radius: 5px;
+  border: 2px solid #68738f;
+  padding-bottom: 10px;
+}
+
+.inicioSesionIzq,
+.inicioSesionDer {
+  padding: 40px;
+  background-color: #444b60;
+  border-radius: 5px;
+  border: 2px solid #F27127;
+  margin-top: 40px;
+}
+
+.inicioSesionP {
+  color: #F27127;
+}
+
+.inicioSesionInput {
+  width: 30vw;
+  background-color: #68738f;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+input.inicioSesionInput::placeholder {
+  color: #d7bf9a;
+}
+
+/*PAGINA MANGAS*/
+.mangaSectionBotones {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.mangasContenedor {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+.mangasContenedor a {
+  text-decoration: none;
+  border-radius: 5px;
+}
+.mangasContenedor a img {
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 5px black;
+}
+.mangasContenedor a:hover {
+  box-shadow: 0 0 5px black;
+  border: 3px solid #b1b8c8;
+}
+
+/*VISOR MANGA*/
+.descripcionManga {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #343846;
+  border-radius: 5px;
+  border: 2px solid #68738f;
+  width: 100%;
+}
+
+.descipcionMargenes {
+  margin: 0;
+}
+
+.contenedorImagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: auto;
+}
+
+.paginaManga {
+  width: 100%;
+  height: auto;
+}
+
+.centrarContenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.visorGrupo {
+  background-color: #343846;
+  border-radius: 5px;
+  border: 2px solid #68738f;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/*RANKGINGS*/
+.rankingsSection {
+  display: flex;
+}
+
+.buttonComentarios {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rankingsImagen {
+  width: 150px;
+  height: 150px;
+}
+
+.rankingsRepertorio {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rankingsDescripcion {
+  margin-right: 20px;
+  width: 600px;
+  height: 150px;
+  overflow: scroll;
+  padding-left: 10px;
+}
+.rankingsDescripcion p {
+  color: white;
+  text-shadow: 0 0 5px black, 0 0 10px #005df4;
+}
+
+.rankingsButton {
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 0 5px black;
+  background-color: #F27127;
+  color: white;
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+}
+
+.rankingsValoracion {
+  border: 1px solid red;
+}
+
+.coloresTexto {
+  color: #F27127;
+  font-weight: bold;
+}
+
+.coloresTextoSecundario {
+  color: #F27127;
+  font-weight: 200;
+}
+
+.cartaColor {
+  background-color: #444b60;
+  border-radius: 5px;
+  border: 2px solid #68738f;
+  text-decoration: none;
+}
+
+/*REPRODUCTOR*/
+.reproductorContainer {
+  height: 0;
+  padding-bottom: 56.25%;
+  /* Relación de aspecto 16:9 (9 / 16 * 100) */
+  position: relative;
+}
+
+.videoWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.dimensionesVideo {
+  width: 100%;
+  height: 100%;
+}
+
+.containerReproductor {
+  background-color: #343846;
+  border-radius: 5px;
+  border: 2px solid #68738f;
+}
+
+.visorGrupoReproductor {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid #F27127;
+}
+
+.comentarios {
+  width: 70%;
+}
+
+.comentariosSpan {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.h2Comentarios {
+  display: block;
+}
+
+@media (max-width: 770px) {
+  .galeriaH2 {
+    font-weight: normal;
+    font-size: 1.5rem;
+  }
+  .galeriaRankingsButton {
+    white-space: nowrap;
+  }
+  .inicioSesionIzq,
+  .inicioSesionDer {
+    margin-top: 20px;
+  }
+  .inicioSesionInput {
+    width: 50vw;
+  }
+  .mangaSectionBotones {
+    flex-direction: column;
+    align-items: center;
+  }
+  .buttonMedia {
+    width: 70%;
+    margin: 5px 0;
+  }
+}
+@media (max-width: 500px) {
+  .headerImagen {
+    width: 124px;
+  }
+  .galeriaRankingsButton {
+    white-space: normal;
+  }
+  .inicioSesionButton {
+    white-space: normal;
+    max-width: 100%;
+    font-size: 14px;
+  }
+  .buttonHover {
+    color: #d7bf9a;
+    text-shadow: 0 0 1px black;
+    background-color: #68738f;
+    margin: 10px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    margin: 5px;
+  }
+  .buttonHover:hover {
+    color: #444b60;
+    background-color: #b1b8c8;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */

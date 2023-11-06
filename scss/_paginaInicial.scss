@@ -1,0 +1,199 @@
+.galeriaManga,
+.galeriaAnime {
+    height: auto;
+}
+
+.galeriaManga,
+.galeriaAnime {
+    background-color: $color-oscuro2;
+    border-radius: 5px;
+    border: 2px solid $color-medio;
+}
+
+.galeriaLink {
+    color: $color-primario;
+    font-weight: bold;
+    background-color: $color-medio;
+    border-radius: 5px;
+    margin: 0px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.carouselMargin {
+    margin-top: 50px;
+}
+
+.galeriaRankings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.galeriaRankingsButton {
+    background-color: $color-medio;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 5px black;
+    margin-left: 10px;
+    text-decoration: none;
+    color: $letras;
+    padding: 5px;
+    text-shadow: 0 0 1px black;
+    transition: 0.3s ease;
+
+    &:hover {
+        color: $color-oscuro3;
+        background-color: $color-claro2;
+        cursor: pointer;
+    }
+}
+
+.galeriaCarrusel {
+    margin: 25px 0 25px 0;
+}
+
+.galeriaMangaModoNoche {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.galeriaMangaButton {
+    background-color: $color-primario;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 5px black;
+    margin-left: 10px;
+    transition: 0.3s ease;
+
+    &:hover {
+        background-color: $color-secundario;
+        box-shadow: 0 0 10px black;
+    }
+}
+
+.galeriaMangaP {
+    color: $color-primario;
+    align-items: center;
+    font-weight: bold;
+    margin: 0 0 0 auto;
+    font-size: 1.2rem;
+}
+
+.galeriaMangaContainer {
+    overflow: scroll;
+    height: 500px;
+}
+
+.galeriaMangaContainer::-webkit-scrollbar{
+    width: 16px;
+}
+
+.galeriaMangaContainer::-webkit-scrollbar-thumb{
+    background: $color-primario;
+    border-radius: 50px;
+}
+
+.galeriaMangaCarta {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    box-shadow: 0 0 5px black;
+    border-radius: 5px;
+    transition: 0.3s ease;
+
+    &:hover {
+        box-shadow: 0 0 10px black;
+    }
+
+    &:hover > h3 {
+        color: white;
+    }
+
+    &:hover > .galeriaMangaCartaButton {
+        background-color: white;
+    }
+}
+
+.galeriaMangaCartaImagen {
+    height: 140px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.galeriaImagen {
+    width: 100%;
+}
+
+.galeriaMangaCartaButtonImg{
+    width: 40px;
+}
+
+.galeriaMangaCartaButton{
+    transition:0.3s ease;
+}
+
+.cartaTopAnime {
+    padding: 15px;
+    display: flex;
+    position: relative;
+
+    a {
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    .numero {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background-color: $color-oscuro2;
+        color: $color-primario;
+        padding: 10px;
+        border-radius: 10px;
+        transition: 0.3s ease;
+    }
+
+    .titulo {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        background-color: $color-oscuro2;
+        color: $color-primario;
+        padding: 10px;
+        border-radius: 10px;
+        transition: 0.3s ease;
+    }
+
+    @include responsiveStyles;
+
+    &:hover {
+        .titulo {
+            color: white;
+        }
+
+        a img {
+            filter: blur(1px);
+        }
+
+        .numero {
+            color: white;
+        }
+    }
+}
+
+.topAnimesCenter{
+    background-color: $color-oscuro2;
+    border-radius: 5px;
+    border: 2px solid $color-medio;
+    margin-top:20px;
+    padding-top: 20px;
+}
