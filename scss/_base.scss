@@ -3,12 +3,13 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 16px;
+  width: 10px;
 }
 
 body::-webkit-scrollbar-thumb {
   background: $color-primario;
   border-radius: 50px;
+  border-right: 2px solid black;
 }
 
 .background {
@@ -33,12 +34,13 @@ h2 {
   color: $color-primario;
   font-weight: bold;
   display: inline;
+  margin-left:15px;
 }
 
 h3 {
   font-size: 2rem;
   color: $color-primario;
-  text-shadow: 0 0 5px $color-terciario, 0 0 10px $color-terciario;
   font-weight: bold;
   transition: 0.3s ease;
+  margin-left:10px;
 }

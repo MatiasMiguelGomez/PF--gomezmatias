@@ -49,4 +49,19 @@
     @include buttonHover;
     margin: 5px;
   }
+
+  .reacciones{
+    flex-wrap: wrap;
+
+    div {
+      width: 30%; 
+      margin-bottom: 0px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .galeriaMangaCartaButton {
+      display: none;
+  }
 }

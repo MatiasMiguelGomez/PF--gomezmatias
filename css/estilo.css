@@ -5,12 +5,13 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 16px;
+  width: 10px;
 }
 
 body::-webkit-scrollbar-thumb {
   background: #F27127;
   border-radius: 50px;
+  border-right: 2px solid black;
 }
 
 .background {
@@ -49,14 +50,15 @@ h2 {
   color: #F27127;
   font-weight: bold;
   display: inline;
+  margin-left: 15px;
 }
 
 h3 {
   font-size: 2rem;
   color: #F27127;
-  text-shadow: 0 0 5px #735A4C, 0 0 10px #735A4C;
   font-weight: bold;
   transition: 0.3s ease;
+  margin-left: 10px;
 }
 
 header {
@@ -106,6 +108,8 @@ footer p {
   background-color: #343846;
   border-radius: 5px;
   border: 2px solid #68738f;
+  box-sizing: border-box;
+  margin-bottom: 10px;
 }
 
 .galeriaLink {
@@ -186,7 +190,7 @@ footer p {
 }
 
 .galeriaMangaContainer::-webkit-scrollbar {
-  width: 16px;
+  width: 10px;
 }
 
 .galeriaMangaContainer::-webkit-scrollbar-thumb {
@@ -283,7 +287,6 @@ footer p {
   background-color: #343846;
   border-radius: 5px;
   border: 2px solid #68738f;
-  margin-top: 20px;
   padding-top: 20px;
 }
 
@@ -303,6 +306,10 @@ footer p {
   padding-bottom: 10px;
 }
 
+.saltoDeLinea {
+  margin-right: auto;
+}
+
 .inicioSesionIzq,
 .inicioSesionDer {
   padding: 40px;
@@ -314,6 +321,7 @@ footer p {
 
 .inicioSesionP {
   color: #F27127;
+  margin-top: 20px;
 }
 
 .inicioSesionInput {
@@ -336,6 +344,7 @@ input.inicioSesionInput::placeholder {
 
 .mangasContenedor {
   margin-top: 20px;
+  margin-bottom: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 15px;
@@ -376,6 +385,7 @@ input.inicioSesionInput::placeholder {
   align-items: center;
   width: 60%;
   height: auto;
+  margin: 10px 0 10px 0;
 }
 
 .paginaManga {
@@ -387,12 +397,18 @@ input.inicioSesionInput::placeholder {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
+}
+
+.seccionInferior {
+  background-color: #343846;
+  border: 2px solid #68738f;
+  width: 100%;
+  border-radius: 5px;
+  height: 100%;
 }
 
 .visorGrupo {
-  background-color: #343846;
-  border-radius: 5px;
-  border: 2px solid #68738f;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -496,17 +512,61 @@ input.inicioSesionInput::placeholder {
   border-bottom: 2px solid #F27127;
 }
 
-.comentarios {
-  width: 70%;
+.comentarioContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #68738f;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
-
-.comentariosSpan {
+.comentarioContainer .comentarioIndividual {
+  display: block;
+  width: 100%;
+}
+.comentarioContainer .comentarioIndividual .comentariosSpan {
   margin-bottom: 10px;
   margin-top: 10px;
+}
+.comentarioContainer .comentarioIndividual .comentarios {
+  width: 70%;
 }
 
 .h2Comentarios {
   display: block;
+  margin-left: 20px;
+  position: relative;
+}
+.h2Comentarios::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 30px;
+  background-color: #F27127;
+  border-radius: 10px;
+}
+
+.reacciones {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto 0 auto;
+  height: 100%;
+}
+.reacciones div {
+  text-align: center;
+}
+.reacciones div img {
+  width: 50px;
+  transition: 0.3s ease;
+}
+.reacciones div p {
+  color: #F27127;
+}
+.reacciones div:hover img {
+  width: 70px;
 }
 
 @media (max-width: 770px) {
@@ -557,6 +617,18 @@ input.inicioSesionInput::placeholder {
   .buttonHover:hover {
     color: #444b60;
     background-color: #b1b8c8;
+  }
+  .reacciones {
+    flex-wrap: wrap;
+  }
+  .reacciones div {
+    width: 30%;
+    margin-bottom: 0px;
+  }
+}
+@media (max-width: 400px) {
+  .galeriaMangaCartaButton {
+    display: none;
   }
 }
 

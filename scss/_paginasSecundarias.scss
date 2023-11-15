@@ -15,6 +15,10 @@
     padding-bottom: 10px;
 }
 
+.saltoDeLinea {
+    margin-right: auto;
+}
+
 .inicioSesionIzq,
 .inicioSesionDer {
     padding: 40px;
@@ -26,6 +30,7 @@
 
 .inicioSesionP {
     color: $color-primario;
+    margin-top: 20px;
 }
 
 .inicioSesionInput {
@@ -66,6 +71,7 @@ input.inicioSesionInput::placeholder {
     }
 
     margin-top: 20px;
+    margin-bottom: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 15px;
@@ -93,6 +99,7 @@ input.inicioSesionInput::placeholder {
     align-items: center;
     width: 60%;
     height: auto;
+    margin: 10px 0 10px 0;
 }
 
 .paginaManga {
@@ -104,12 +111,18 @@ input.inicioSesionInput::placeholder {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
+}
+
+.seccionInferior {
+    background-color: $color-oscuro2;
+    border: 2px solid $color-medio;
+    width: 100%;
+    border-radius: 5px;
+    height: 100%;
 }
 
 .visorGrupo {
-    background-color: $color-oscuro2;
-    border-radius: 5px;
-    border: 2px solid $color-medio;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -216,15 +229,70 @@ input.inicioSesionInput::placeholder {
     border-bottom: 2px solid $color-primario;
 }
 
-.comentarios {
-    width: 70%;
+.comentarioContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:2px solid $color-medio;
+    border-radius: 5px;
+    margin-bottom:10px;
+
+    .comentarioIndividual {
+        display: block;
+        width: 100%;
+
+        .comentariosSpan {
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .comentarios {
+            width: 70%;
+        }
+
+    }
 }
 
-.comentariosSpan{
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-
-.h2Comentarios{
+.h2Comentarios {
     display: block;
+    margin-left: 20px;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -10px;
+        transform: translateY(-50%);
+        width: 5px;
+        height: 30px;
+        background-color: $color-primario;
+        border-radius: 10px;
+    }
+}
+
+.reacciones {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto 0 auto;
+    height: 100%;
+
+    div {
+        text-align: center;
+
+        img {
+            width: 50px;
+            transition: 0.3s ease;
+        }
+
+        p {
+            color: $color-primario;
+        }
+
+        &:hover {
+            img {
+                width: 70px;
+            }
+        }
+    }
 }

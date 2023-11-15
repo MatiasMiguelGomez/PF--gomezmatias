@@ -8,6 +8,8 @@
     background-color: $color-oscuro2;
     border-radius: 5px;
     border: 2px solid $color-medio;
+    box-sizing: border-box;
+    margin-bottom: 10px;
 }
 
 .galeriaLink {
@@ -90,7 +92,7 @@
 }
 
 .galeriaMangaContainer::-webkit-scrollbar{
-    width: 16px;
+    width: 10px;
 }
 
 .galeriaMangaContainer::-webkit-scrollbar-thumb{
@@ -194,6 +196,5 @@
     background-color: $color-oscuro2;
     border-radius: 5px;
     border: 2px solid $color-medio;
-    margin-top:20px;
     padding-top: 20px;
 }
